@@ -1,0 +1,52 @@
+@import "./params/mix.less";
+@import "./params/var.less";
+@import "./header.less";
+@import "./features.less";
+@import "./mobile.less";
+@import "./works.less";
+@import "./team.less";
+@import "./facts.less";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Lato';
+    min-width: 320px;
+}
+
+h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: @blue;
+    font-weight: 900;
+}
+
+.heart{
+    text-align: center;
+    &__icons{
+        color: #ff00aa;
+        font-size: 30px;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    &__span{
+        display: inline-block;
+        width: 91px;
+        height: 2px;
+        background: red;
+        &:nth-child(1){
+            transform: translateX(-15px);
+        }
+        &:nth-child(3){
+            transform: translateX(15px);
+        }
+    }
+}

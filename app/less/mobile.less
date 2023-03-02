@@ -1,0 +1,47 @@
+.mobile{
+    padding: 80px 0;
+    font-family: 'Open Sans';
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    &__topTitle{
+        text-align: center;
+        font-size: 18px;
+        color: @title;
+        font-weight: 400;
+        margin-bottom: 70px;
+        line-height: 25px;
+    }   
+    &__img{
+        max-width: 100%;
+    }
+}
+
+.action{
+    display: flex;
+    padding: 15px 10px;
+    margin-bottom: 55px;
+    .sm-block({
+        text-align: center;
+    });
+    cursor: pointer;
+    &:hover{
+        background: rgba(247, 227, 39, 0.5);
+    }
+    &__icons{
+        margin-right: 15px;
+        .sm(display, none);
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 18px;
+        color: @title;
+    }
+    &__info{
+        font-size: 16px;
+        font-weight: 400;
+        color: @title;
+        line-height: 22px;
+    }
+}

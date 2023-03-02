@@ -1,0 +1,70 @@
+.team{
+    padding: 100px 0;
+    &__heart{
+        margin-bottom: 50px;
+    }
+    &__text{
+        text-align: center;
+        font-size: 18px;
+        color: @title;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 100px;
+    }
+    &__member{
+        position: relative;
+        &:hover{
+            .overlay{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+     
+    }
+}
+.overlay{
+   opacity: 0;
+   transition: 500ms;
+   font-family: 'Open Sans';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(85, 125, 255, 0.5);
+   padding: 20px;
+   color: white;
+   &__title{
+      font-weight: 600;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 15px;
+   }
+   &__text{
+       font-size: 15px;
+       font-weight: 400;
+       text-align: center;
+       line-height: 20px;
+   }
+}
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__item{
+        margin: 0 5px;
+        background: rgba(178, 178, 178, 0.3);
+        padding: 10px;
+        &:hover{
+            background: yellow;
+            border-radius: 6px;
+            .fab{
+                color: blue;
+            }
+        }
+    }
+    .fab{
+        color: white;
+        font-size: 25px;
+    }
+}
